@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>test</title>
+
+   
+</head>
+<body>
+    <p id="para"></p>
+    <p id="para1"></p>
+    
+</body>
+<script>
+//    let newDate=Date;
+//     console.log(newDate);
+
+
+
+    document.onclick=function show(e){
+        
+        let newDate=new Date();
+        
+        let hrs=newDate.getHours();
+        let mnt=newDate.getMinutes();
+        let scnd=newDate.getSeconds();
+        // console.log(hours);
+        
+        document.getElementById("para").innerHTML= "pageX"+ e.clientX + "`<br> <br> <br>` " +  "pageY"+ e.clientY+ "`<br> <br>`" +hrs+":"+mnt+ ":"+scnd;
+        
+        // console.log(e.clientX);
+        // console.log(e.clientY);
+
+    }
+
+</script>
+</html>
